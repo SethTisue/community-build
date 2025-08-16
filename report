@@ -1,6 +1,6 @@
 #!/usr/local/bin/env -S scala -Dlog4j.configurationFile=scripts/log4j.properties shebang --quiet
 
-//> using scala 3.6.3
+//> using scala 3.7.2
 //> using option -source:future
 
 object ClocReport:
@@ -38,9 +38,9 @@ object SuccessReport:
     "metrics-scala", // JDK 8 support dropped (August 2023)
     "mdoc", // JDK 8 support dropped (October 2023)
     "parboiled", // JDK 8 support dropped (March 2022)
-    "pass4s",
     "play-file-watch", // JDK 8 support dropped (October 2022)
     "playframework", // JDK 8 support dropped (September 2022)
+    "pureconfig", // errors on JDK 8 in zio/internal/stacktracer (June 2025)
     "requests-scala", // JDK 8 support dropped (June 2024)
     "scaffeine", // they seem to be on a caffeine version that requires JDK 11
     "scalachess",
